@@ -7,11 +7,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
 @Entity
 @Table(name = "Users")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class User {
     @Id
     private String id;
@@ -19,4 +20,5 @@ public class User {
     private String email;
     private String password;
     private boolean admin;
+    
 }
